@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
   <head>
+	<!-- BOLT HEAD TESTE WORKFLOW-->
   <?php do_action( 'brius_head_init' )?>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" />
     <meta name="theme-color" content="<?php echo brius_get_property('theme-color'); ?>" />
