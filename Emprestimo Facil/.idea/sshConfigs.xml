@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="34.58.197.220" id="570dc433-f7be-4807-a88d-fca8f3c3eb99" port="22" customName="ef-dev" nameFormat="CUSTOM" username="uconecte" useOpenSSHConfig="true">
+        <option name="customName" value="ef-dev" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

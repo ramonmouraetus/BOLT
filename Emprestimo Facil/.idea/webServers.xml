@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="43b7220a-9234-47e4-8438-d2bdcc225748" name="ef-dev" url="http://dev.emprestimofacil.com">
+        <fileTransfer accessType="SFTP" host="34.58.197.220" port="22" sshConfigId="570dc433-f7be-4807-a88d-fca8f3c3eb99" sshConfig="ef-dev">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
