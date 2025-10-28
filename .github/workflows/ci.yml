@@ -1,0 +1,108 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [staging]            # staging automático
+  workflow_dispatch:               # produção manual (Run workflow)
+
+env:
+
+  DIST_ARTIFACT_NAME: dist
+
+jobs:
+  # ============ STAGING ============
+  build_staging:
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads/staging')
+    name: Build (staging)
+    runs-on: ubuntu-latest
+    environment: staging
+    container: node:22-slim
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.DIST_ARTIFACT_NAME }}
+          path: dist/
+
+  deploy_staging:
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads/staging')
+    name: Deploy (staging)
+    runs-on: ubuntu-latest
+    needs: build_staging
+    environment: staging
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ env.DIST_ARTIFACT_NAME }}
+          path: dist/
+      - name: Auth no GCP (service account JSON)
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SERVICE_KEY }}
+      - name: Instalar gcloud e setar projeto
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ vars.GCP_PROJECT }}
+      - name: (opcional) Copiar zip para bolt-latest.zip
+        run: |
+          if ls dist/*.zip 1> /dev/null 2>&1; then
+            cp dist/*.zip dist/bolt-latest.zip
+          fi
+      - name: Deploy com gsutil rsync
+        run: |
+          gsutil -h "Cache-Control:no-cache,no-store,max-age=0" -m rsync -r dist/ "${{ vars.GCP_STORAGE }}"
+
+  # ============ PRODUÇÃO (manual) ============
+  build_production:
+    # Só dispara manualmente e se a branch selecionada for master
+    if: github.event_name == 'workflow_dispatch' && github.ref_name == 'master'
+    name: Build (production)
+    runs-on: ubuntu-latest
+    environment: production
+    container: node:22-slim
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.DIST_ARTIFACT_NAME }}
+          path: dist/
+
+  deploy_production:
+    if: github.event_name == 'workflow_dispatch' && github.ref_name == 'master'
+    name: Deploy (production)
+    runs-on: ubuntu-latest
+    needs: build_production
+    environment: production
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ env.DIST_ARTIFACT_NAME }}
+          path: dist/
+      - name: Auth no GCP (service account JSON)
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SERVICE_KEY }}
+      - name: Instalar gcloud e setar projeto
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ vars.GCP_PROJECT }}
+      - name: (opcional) Copiar zip para bolt-latest.zip
+        run: |
+          if ls dist/*.zip 1> /dev/null 2>&1; then
+            cp dist/*.zip dist/bolt-latest.zip
+          fi
+      - name: Deploy com gsutil rsync
+        run: |
+          gsutil -h "Cache-Control:no-cache,no-store,max-age=0" -m rsync -r dist/ "${{ vars.GCP_STORAGE }}"

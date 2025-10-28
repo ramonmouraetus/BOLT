@@ -1,6 +1,7 @@
 /**
  * Script para gerar o ZIP do tema
  * Pode ser executado com: node scripts/generate-zip.js [ambiente]
+ * Exemplo: node scripts/generate-zip.js staging
  */
 
 const fs = require('fs');
