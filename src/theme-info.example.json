@@ -1,0 +1,8 @@
+{
+  "theme": "bolt",
+  "new_version": "2.2.0",
+  "url": "https://assets-staging.brius.com.br/themes/bolt/changelog.html",
+  "package": "https://assets-staging.brius.com.br/themes/bolt/bolt-latest.zip",
+  "requires": "5.0",
+  "requires_php": "7.0"
+}

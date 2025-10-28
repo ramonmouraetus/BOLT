@@ -1,0 +1,44 @@
+[
+  {
+    "name": "header-menu",
+    "label": "Header Menu",
+    "template_wrapper": "header-menu",
+    "elements":{
+      "parent": {
+        "has_submenu_icon": "<i class=\"brius_lightweight_identity_font icon arrow-icon\"></i>",
+        "has_submenu_li_class": "has-li-submenu",
+        "has_submenu_link_class": "has-submenu",
+        "content": "<li class=\"%LI_CLASS%\"> <a class=\"%LINK_CLASS%\" %HREF% title=\"Ir para %TITLE% \"><span>%TITLE% </span> %SUBMENU_ICON% </a>",
+        "close": "</li>"
+      },
+      "child": {
+        "has_submenu_li_class": "has-li-submenu",
+        "has_submenu_link_class": "has-submenu",
+        "content": "<li><a %HREF% title=\"Ir para %TITLE% \"><span><label></label><p>%TITLE% </p></span></a>",
+        "close": "</li>"
+      }
+    }
+  },
+  {
+    "name": "footer-first-menu",
+    "label": "Footer 1st Menu",
+    "template_wrapper": "footer-menu",
+    "elements": {
+      "parent": {
+        "content": "<li><span class=\"footer-menu-column-title footer-text\"><a %HREF% title=\"Ir para %TITLE%\">%TITLE%</a></span>",
+        "close": "</li>"
+      }
+    }
+  },
+  {
+    "name": "footer-second-menu",
+    "label": "Footer 2nd Menu",
+    "template_wrapper": "footer-menu",
+    "elements": {
+      "parent": {
+        "content": "<li><span class=\"footer-menu-column-title footer-text\"><a %HREF% title=\"Ir para %TITLE%\">%TITLE%</a></span>",
+        "close": "</li>"
+      }
+    }
+  }
+]

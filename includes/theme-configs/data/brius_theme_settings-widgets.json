@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Footer Left Widget",
+    "id": "left-footer-widget",
+    "description": "Add widgets here to appear in your left footer area in desktop devices.",
+    "before_widget": "<div>",
+    "after_widget": "</div>"
+  },
+  {
+    "name": "Footer Left Widget Mobile",
+    "id": "left-footer-widget-mob",
+    "description": "Add widgets here to appear in your left footer area in mobile devices.",
+    "before_widget": "<div>",
+    "after_widget": "</div>"
+  },
+  {
+    "name": "Subfooter Left Widget",
+    "id": "subfooter-left-widget",
+    "description": "Add widgets here to appear in your left in subfooter.",
+    "before_widget": "<div>",
+    "after_widget": "</div>"
+  },
+  {
+    "name": "Disclaimer",
+    "id": "disclaimer",
+    "description": "Add widgets here to appear in your center subfooter.",
+    "before_widget": "<div>",
+    "after_widget": "</div>"
+  }
+]

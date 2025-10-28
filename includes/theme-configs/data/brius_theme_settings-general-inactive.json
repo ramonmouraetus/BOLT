@@ -1,0 +1,124 @@
+[
+  {
+    "name": "infinite_scroll_cats_allowed",
+		"setting": {
+      "default": "",
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Ativar infinite scroll em",
+      "description": "Slug da categoria ou das categorias separado por vírgula. Ex: viagens, make-up",
+      "section": "infinite_scroll_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "infinite_scroll_head_init",
+		"setting": {
+      "default": "",
+      "capability": "edit_theme_options",
+      "transport": "postMessage"
+    },
+    "control": {
+      "label": "Código HTML que será inserido no início da tag <HEAD>",
+      "description": "Scripts ou qualquer código HTML que deseja ser executado caso Infinite Scroll esteja habilitado.",
+      "section": "infinite_scroll_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "infinite_scroll_length",
+		"setting": {
+      "default": 0,
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "",
+      "description": "Limite de novos posts carregados de forma infinita",
+      "section": "infinite_scroll_section",
+      "type": "number"
+    }
+  },
+  {
+    "name": "infinite_scroll_timeout",
+		"setting": {
+      "default": 1000,
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "",
+      "description": "Tempo mínimo entre o load de um conteúdo e o próximo em milissegundos",
+      "section": "infinite_scroll_section",
+      "type": "number"
+    }
+  },
+  {
+    "name": "infinite_scroll_tags_denied",
+		"setting": {
+      "default": "",
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Desabilitar infinite scroll em:",
+      "description": "Slug da tag ou das tags separado por vírgula. Ex: pagina-1,meios-de-comunicacao",
+      "section": "infinite_scroll_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "post_list_terms_allowed",
+		"setting": {
+      "default": "",
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Ativar Lazy Sections em",
+      "description": "Slug das <b>categorias</b> ou das <b>tags</b> separado por vírgula. Ex: viagens, make-up",
+      "section": "post_list_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "post_list_head_init",
+		"setting": {
+      "default": "",
+      "capability": "edit_theme_options",
+      "transport": "postMessage",
+      "sanitize_callback": "sanitize_textarea_field"
+    },
+    "control": {
+      "label": "Código HTML que será inserido no início da tag <HEAD>",
+      "description": "Scripts ou qualquer código HTML que deseja ser executado caso Infinite Scroll esteja habilitado.",
+      "section": "post_list_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "post_list_timeout",
+		"setting": {
+      "default": 0,
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "",
+      "description": "Tempo mínimo entre o load de uma seção e a próxima em ms",
+      "section": "post_list_section",
+      "type": "number"
+    }
+  },
+  {
+    "name": "post_list_tags_denied",
+		"setting": {
+      "default": "",
+      "capability": "edit_theme_options",
+      "sanitize_callback": "sanitize_textarea_field"
+    },
+    "control": {
+      "label": "Desabilitar infinite scroll em:",
+      "description": "Slug da tag ou das tags separado por vírgula. Ex: pagina-1,meios-de-comunicacao",
+      "section": "post_list_section",
+      "type": "textarea"
+    }
+  }
+
+]

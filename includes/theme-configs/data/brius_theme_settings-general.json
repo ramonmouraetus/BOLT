@@ -1,0 +1,423 @@
+[
+	{
+		"name": "footer-copyright",
+		"setting": {
+      "default": "footer-copyright",
+      "capability": "edit_theme_options",
+      "sanitize_callback": "sanitize_textarea_field"
+    },
+    "control": {
+      "label": "Footer copyright area",
+      "section": "title_tagline",
+      "type": "textarea"
+    }
+	},
+  {
+		"name": "show_author_meta",
+		"setting": {
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Exibir meta do autor?",
+      "section": "meta_section",
+      "type": "checkbox"
+    }
+  },
+  {
+    "name": "author_meta_position",
+		"setting": {
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Onde exibir meta do autor",
+      "description": "Defina a posição em relação ao post",
+      "section": "meta_section",
+      "type": "radio",
+      "choices": {
+        "brius_before_thumbnail": "Antes do Post (acima da imagem de capa)",
+        "brius_after_thumbnail": "Depois da imagem de capa",
+        "brius_after_post": "Depois do Post"
+      }
+    }
+  },
+  {
+    "name": "author_meta_template",
+		"setting": {
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Modelo de meta do autor",
+      "description": "Ecolha uma das opções",
+      "section": "meta_section",
+      "type": "radio",
+      "choices": {
+        "single": "Linha simples",
+        "rounded_detail": "Com imagem",
+        "full_rectangle": "Completo"
+      }
+    }
+  },
+  {
+    "name": "show_meta_hour",
+		"setting": {
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Exibir hora",
+      "section": "meta_secion",
+      "type": "checkbox"
+    }
+  },
+  {
+    "name": "home_layout",
+		"setting": {
+      "default": "home_layout",
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Modelo de home-page",
+      "section": "home_layout_section2",
+      "description": "Sua escolha determina a maneira como os posts são exibidos na sua home",
+      "type": "radio",
+      "choices": {
+        "time_based": "Linha do tempo (mais recente primeiro)",
+        "custom_by_categories": "Customizável por Categorias"
+      }
+    }
+  },
+  {
+    "name": "show_related_posts",
+		"setting": {
+      "default": false,
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Exibir posts realcionados",
+      "section": "related_posts_section",
+      "type": "checkbox"
+    }
+  },
+  {
+    "name": "related_posts",
+		"setting": {
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Onde exibir os posts relacionados",
+      "description": "Defina a posição em relação ao post",
+      "section": "related_posts_section",
+      "type": "radio",
+      "choices": {
+        "brius_after_post": "Após o post/conteúdo",
+        "brius_before_comments": "Antes dos comentários",
+        "brius_after_comments": "Depois dos comentários"
+      }
+    }
+  },
+  {
+    "name": "related_posts_title",
+		"setting": {
+      "capability": "edit_theme_options",
+      "sanitize_callback": "wp_kses_post"
+    },
+    "control": {
+      "label": "Título dos posts relacionados",
+      "section": "related_posts_section",
+      "type": "text"
+    }
+  },
+  {
+    "name": "related_posts_tags_denied",
+		"setting": {
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Desabilitar posts relacionados caso o post tenha a tag:",
+      "description": "Slug da tag ou das tags separado por vírgula. Ex: pagina-1,meios-de-comunicacao",
+      "section": "related_posts_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "related_posts_cats_denied",
+		"setting": {
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Desabilitar posts relacionados para posts da(s) categoria(s):",
+      "description": "Slug da categoria ou das categorias separado por vírgula. Ex: viagens, make-up",
+      "section": "related_posts_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "not_found_head_init",
+		"setting": {
+      "capability": "edit_theme_options",
+      "transport": "postMessage"
+    },
+    "control": {
+      "label": "Código HTML que será inserido no início da tag <HEAD>",
+      "description": "Scripts ou qualquer código HTML que deseja ser executado caso retorne uma página 404.",
+      "section": "not_found_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "not_found_title",
+		"setting": {
+      "default": "<strong>404!</strong> Nenhum resultado encontrado!",
+      "capability": "edit_theme_options",
+      "transport": "postMessage",
+      "sanitize_callback": "sanitize_text_field"
+    },
+    "control": {
+      "label": "Título da página 404",
+      "description": "HTML personalizado para o título de 404",
+      "section": "not_found_section"
+    }
+  },
+  {
+    "name": "not_found_content",
+		"setting": {
+      "default": "Nenhum resultado para o que você procura! Tente realizar uma busca.",
+      "capability": "edit_theme_options",
+      "transport": "postMessage"
+    },
+    "control": {
+      "label": "Título da página 404",
+      "description": "HTML personalizado para a mensagem de 404 <br><b>(Cuidado! Código HTML mau estruturado pode quebrar a página de resultado!)</b>",
+      "section": "not_found_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "enable_output_compression",
+		"setting": {
+      "default": false,
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Habilitar Compressão de output?",
+      "description": "Se habilitado todo código HTML gerado pelo wordpres será minificado (pode impactar positivamente na performance, porém necessita de testes)",
+      "section": "performance_section",
+      "type": "checkbox"
+    }
+  },
+  {
+    "name": "show_post_versal",
+		"setting": {
+      "default": false,
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Exibir tag versal",
+      "section": "versal_section",
+      "type": "checkbox"
+    }
+  },
+  {
+    "name": "versal_posts_tags_denied",
+		"setting": {
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Desabilitar versal caso o post tenha a tag:",
+      "description": "Slug da tag ou das tags separado por vírgula. Ex: pagina-1,meios-de-comunicacao",
+      "section": "versal_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "versal_posts_cats_denied",
+		"setting": {
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Desabilitar versal para posts da(s) categoria(s):",
+      "description": "Slug da categoria ou das categorias separado por vírgula. Ex: viagens, make-up",
+      "section": "versal_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "infinite_scroll_cats_allowed",
+		"setting": {
+      "default": "",
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Ativar infinite scroll em",
+      "description": "Slug da categoria ou das categorias separado por vírgula. Ex: viagens, make-up",
+      "section": "infinite_scroll_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "infinite_scroll_head_init",
+		"setting": {
+      "default": "",
+      "capability": "edit_theme_options",
+      "transport": "postMessage"
+    },
+    "control": {
+      "label": "Código HTML que será inserido no início da tag <HEAD>",
+      "description": "Scripts ou qualquer código HTML que deseja ser executado caso Infinite Scroll esteja habilitado.",
+      "section": "infinite_scroll_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "infinite_scroll_length",
+		"setting": {
+      "default": 0,
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "",
+      "description": "Limite de novos posts carregados de forma infinita",
+      "section": "infinite_scroll_section",
+      "type": "number"
+    }
+  },
+  {
+    "name": "infinite_scroll_timeout",
+		"setting": {
+      "default": 1000,
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "",
+      "description": "Tempo mínimo entre o load de um conteúdo e o próximo em milissegundos",
+      "section": "infinite_scroll_section",
+      "type": "number"
+    }
+  },
+  {
+    "name": "infinite_scroll_tags_denied",
+		"setting": {
+      "default": "",
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Desabilitar infinite scroll em:",
+      "description": "Slug da tag ou das tags separado por vírgula. Ex: pagina-1,meios-de-comunicacao",
+      "section": "infinite_scroll_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "post_list_terms_allowed",
+		"setting": {
+      "default": "",
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "Ativar Lazy Sections em",
+      "description": "Slug das <b>categorias</b> ou das <b>tags</b> separado por vírgula. Ex: viagens, make-up",
+      "section": "post_list_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "post_list_head_init",
+		"setting": {
+      "default": "",
+      "capability": "edit_theme_options",
+      "transport": "postMessage",
+      "sanitize_callback": "sanitize_textarea_field"
+    },
+    "control": {
+      "label": "Código HTML que será inserido no início da tag <HEAD>",
+      "description": "Scripts ou qualquer código HTML que deseja ser executado caso Infinite Scroll esteja habilitado.",
+      "section": "post_list_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "post_list_timeout",
+		"setting": {
+      "default": 0,
+      "capability": "edit_theme_options"
+    },
+    "control": {
+      "label": "",
+      "description": "Tempo mínimo entre o load de uma seção e a próxima em ms",
+      "section": "post_list_section",
+      "type": "number"
+    }
+  },
+  {
+    "name": "post_list_tags_denied",
+		"setting": {
+      "default": "",
+      "capability": "edit_theme_options",
+      "sanitize_callback": "sanitize_textarea_field"
+    },
+    "control": {
+      "label": "Desabilitar infinite scroll em:",
+      "description": "Slug da tag ou das tags separado por vírgula. Ex: pagina-1,meios-de-comunicacao",
+      "section": "post_list_section",
+      "type": "textarea"
+    }
+  },
+  {
+    "name": "mob_top_ad_position",
+		"setting": {
+      "capability": "edit_theme_options",
+      "default": "disabled"
+    },
+    "control": {
+      "label": "Mobile",
+      "description": "Permite o gerenciamento do anúncio do topo em dispositivos Mobile diretamente pela config do BOLT. Definindo um min-height de 100vw",
+      "section": "ads_section",
+      "type": "radio",
+      "choices": {
+        "disabled": "Desabilitar Gerenciamento",
+        "after-header": "Depois do Header/Top Bar",
+        "after-title": "Depois do título",
+        "after-subtitle": "Depois do subtítulo",
+        "before-thumbnail": "Antes da imagem de capa",
+        "after-thumbnail": "Depois da Imagem de capa"
+      }
+    }
+  },
+  {
+    "name": "desk_top_ad_position",
+		"setting": {
+      "capability": "edit_theme_options",
+      "default": "disabled"
+    },
+    "control": {
+      "label": "Desktop",
+      "description": "Permite o gerenciamento do anúncio do topo em dispositivos Desktop diretamente pela config do BOLT. Definindo um min-height de 270px",
+      "section": "ads_section",
+      "type": "radio",
+      "choices": {
+        "disabled": "Desabilitar Gerenciamento",
+        "after-header": "Depois do Header/Top Bar",
+        "after-title": "Depois do título",
+        "after-subtitle": "Depois do subtítulo",
+        "before-thumbnail": "Antes da imagem de capa",
+        "after-thumbnail": "Depois da Imagem de capa"
+      }
+    }
+  },
+  {
+    "name": "prerender",
+		"setting": {
+      "capability": "edit_theme_options",
+      "default": "disabled"
+    },
+    "control": {
+      "label": "Prerender",
+      "description": "Facilita o controle do carregamento das páginas presentes nos CTAs.",
+      "section": "prerender_section",
+      "type": "radio",
+      "choices": {
+        "disabled": "Desabilitar Pré renderização",
+        "enabled": "Habilitar Pré renderização"
+      }
+    }
+  }
+]

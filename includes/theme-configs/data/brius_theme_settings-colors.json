@@ -1,0 +1,142 @@
+[
+  {
+    "name": "header-bg",
+    "setting": {
+      "sanitize_callback": "sanitize_hex_color"
+    },
+    "control": {
+      "label": "Background do topo",
+      "section": "colors"
+    }
+  },
+  {
+    "name": "menu-font-color",
+    "setting": {
+      "sanitize_callback": "sanitize_hex_color"
+    },
+    "control": {
+      "label": "Cor do menu principal",
+      "section": "colors"
+    }
+  },
+  {
+    "name": "footer-font-color",
+    "setting": {
+      "sanitize_callback": "sanitize_hex_color"
+    },
+    "control": {
+      "label": "Texto do rodapé",
+      "section": "colors"
+    }
+  },
+  {
+    "name": "footer-bg",
+    "setting": {
+      "sanitize_callback": "sanitize_hex_color"
+    },
+    "control": {
+      "label": "Background do rodapé",
+      "section": "colors"
+    }
+  },
+  {
+    "name": "footer-font-color-mob",
+    "setting": {
+      "sanitize_callback": "sanitize_hex_color"
+    },
+    "control": {
+      "label": "Texto do rodapé Mobile",
+      "section": "colors"
+    }
+  },
+  {
+    "name": "footer-bg-mob",
+    "setting": {
+      "sanitize_callback": "sanitize_hex_color"
+    },
+    "control": {
+      "label": "Background do rodapé Mobile",
+      "section": "colors"
+    }
+  },
+  {
+    "name": "theme-color",
+    "setting": {
+      "sanitize_callback": "sanitize_hex_color"
+    },
+    "control": {
+      "label": "Cor tema mobile",
+      "section": "colors"
+    }
+  },
+  {
+    "name": "identity-color",
+    "setting": {
+      "sanitize_callback": "sanitize_hex_color"
+    },
+    "control": {
+      "label": "Cor identidade do Site",
+      "section": "colors"
+    }
+  },
+  {
+    "name": "button-color",
+    "setting": {
+      "sanitize_callback": "sanitize_hex_color"
+    },
+    "control": {
+      "label": "Cor botão (CTA)",
+      "section": "colors"
+    }
+  },
+  {
+    "name": "button-font-color",
+    "setting": {
+      "sanitize_callback": "sanitize_hex_color"
+    },
+    "control": {
+      "label": "Cor fonte botão (CTA)",
+      "section": "colors"
+    }
+  },
+  {
+    "name": "button-color-hover",
+    "setting": {
+      "sanitize_callback": "sanitize_hex_color"
+    },
+    "control": {
+      "label": "Cor botão (CTA) :hover",
+      "section": "colors"
+    }
+  },
+  {
+    "name": "button-hover-font-color",
+    "setting": {
+      "sanitize_callback": "sanitize_hex_color"
+    },
+    "control": {
+      "label": "Cor fonte botão (CTA) :hover",
+      "section": "colors"
+    }
+  },
+  {
+    "name": "disclaimer-desktop",
+    "setting": {
+      "sanitize_callback": "sanitize_hex_color"
+    },
+    "control": {
+      "label": "Cor background Disclaimer desktop ",
+      "section": "colors"
+    }
+  },
+  {
+    "name": "disclaimer-mobile",
+    "setting": {
+      "sanitize_callback": "sanitize_hex_color"
+    },
+    "control": {
+      "label": "Cor background Disclaimer mobile ",
+      "section": "colors"
+    }
+  }
+]

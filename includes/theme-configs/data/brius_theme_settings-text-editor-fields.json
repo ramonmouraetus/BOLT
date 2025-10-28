@@ -1,0 +1,29 @@
+[
+  {
+    "name": "post_subtitle",
+    "position": "after_title",
+    "label": "Subtítulo",
+    "post_types": [
+      "post",
+      "page"
+    ],
+    "attrs": {
+      "type": "text",
+      "placeholder": "Adicionar subtítulo"
+    }
+  },
+  {
+    "name": "post_versal",
+    "position": "after_title",
+    "label": "Versal (Chapéu)",
+    "post_types": [
+      "post",
+      "page"
+    ],
+    "attrs": {
+      "type": "text",
+      "placeholder": "Adicionar chapéu",
+      "maxlength": "25"
+    }
+  }
+]

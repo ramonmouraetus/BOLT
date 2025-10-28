@@ -1,0 +1,42 @@
+/**
+ * components/_relateds.scss
+ */
+
+.related .image-effect-scale {
+  height: 30vw;
+  background-color: #ddd;
+  z-index: 100;
+  border: 1px solid #e5e5e5;
+}
+
+.related .image-effect-scale img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@include tablet {
+  .related {
+    .post-card__title {
+      -webkit-line-clamp: 2;
+    }
+    .image-effect-scale {
+      height: 30vw;
+    }
+  }
+  .relateds {
+    display: flex;
+  }
+  .relateds-title {
+      margin: 1rem 0 2rem;
+  }
+}
+
+@include desktop {
+  .related .image-effect-scale {
+    height: 118px;
+  }
+  .brius-relateds {
+    max-width: 750px;
+  }
+}

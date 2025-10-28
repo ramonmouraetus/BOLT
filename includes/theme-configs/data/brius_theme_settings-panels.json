@@ -1,0 +1,10 @@
+[
+	{
+		"name": "home_layout_section",
+    "attrs": {
+      "title": "Home Layout",
+      "description": "Alterne entre as opções de Home Page",
+      "priority": 30
+    }
+	}
+]

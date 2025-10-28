@@ -1,0 +1,30 @@
+{
+  "name": "etus-mult-linguagens",
+  "version": "1.0.0",
+  "private": "true",
+  "repository": "git@gitlab.com:etus/brius/wordpress/etus-multilanguage-blog.git",
+  "author": "<ramon.moura@etus.digital>",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "concurrently": "^9.1.2",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "mini-css-extract-plugin": "^2.9.1",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.85.0",
+    "webpack-cli": "^5.1.1"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run dev:watch --prefix ./vue-config/translate-config/\" \"webpack --watch --mode production\"",
+    "build": "concurrently \"npm run build --prefix ./vue-config/translate-config/\" \"webpack --mode production\""
+  },
+  "dependencies": {
+    "archiver": "^5.3.1",
+    "flag-icon-css": "^4.1.7",
+    "node-sass": "^9.0.0",
+    "vite": "^6.2.2",
+    "vuestic-ui": "^1.10.3"
+  }
+}

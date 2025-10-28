@@ -1,0 +1,56 @@
+.breadcrumbs {
+  margin: 20px 0;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.breadcrumb-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.breadcrumb-list li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-list li:not(:last-child)::after {
+  content: "›";
+  margin: 0 8px;
+  color: #999;
+  font-size: 16px;
+}
+
+.breadcrumb-list a {
+  color: var(--bolt-identity-color, #0073aa);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-list a:hover {
+  color: var(--bolt-identity-color, #005a87);
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.breadcrumb-list .current {
+  color: #333;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs {
+    margin: 15px 0;
+    font-size: 13px;
+  }
+
+  .breadcrumb-list li:not(:last-child)::after {
+    margin: 0 6px;
+    font-size: 14px;
+  }
+}

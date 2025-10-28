@@ -1,0 +1,130 @@
+<div id="comments%INDEX%" class="comments-area">
+	<script type="text/javascript">
+		const urlParams = new URLSearchParams(document.location.href);
+		space = document.querySelector("#comments%INDEX%");
+		has_comments = urlParams.get("unapproved");
+		if ( !!has_comments ) {
+			space.innerHTML =
+				space.innerHTML +
+				"<div style='background-color: orange; padding: 10px;width: fit-content;border-radius: 5px;'>Seu comentário está aguardando aprovação!</div>";
+		}
+	</script>
+	<span class="detail-page__what-now-title"> Deixe seu Comentário </span>
+	<div id="respond%INDEX%" class="comment-respond">
+		<h3 id="reply-title%INDEX%" class="comment-reply-title">
+			<small
+				><a
+					rel="nofollow"
+					id="cancel-comment-reply-link"
+					href="/news/cvv/#respond"
+					style="display: none"
+					>Cancelar resposta</a
+				></small
+			>
+		</h3>
+		<form
+			action="https://plusdin.com/news/wp-comments-post.php"
+			method="post"
+			id="commentform%INDEX%"
+			class="comment-form"
+		>
+			<p class="comment-notes">
+				<span id="email-notes%INDEX%"
+					>O seu endereço de e-mail não será publicado.</span
+				>
+				Campos obrigatórios são marcados com
+				<span class="required">*</span>
+			</p>
+			<p class="comment-form-comment"></p>
+			<div class="comment-row">
+				<img
+					class="user-img"
+					src="%USER_IMG_SRC%"
+				/><textarea
+					class="comment-area"
+					id="comment%INDEX%"
+					name="comment"
+					placeholder="Seu comentário*"
+					aria-required="true"
+					onmousedown="window.bolt_reveal('#inputs-row-%POST_ID%')"
+				></textarea>
+			</div>
+			<div class="comment-warning-div">
+				<span class="comment-warning"
+					>*Os comentários não representam a opinião do portal ou de
+					seu editores! Ao publicar você está concordando com a
+					<a href="https://plusdin.com/privacidade/"
+						>Política de Privacidade</a
+					>.</span
+				>
+			</div>
+			<p></p>
+			<div id="inputs-row-%POST_ID%" class="inputs-row">
+				<span class="comment-form-author span-comments"
+					><label for="author"
+						><span class="rotulo-input">Seu Nome</span></label
+					>
+					<span class="required">*</span
+					><input
+						class="inputs-comments"
+						id="author%INDEX%"
+						placeholder="Seu Nome"
+						name="author"
+						type="text"
+						value=""
+						size="10"
+				/></span>
+				<span class="comment-form-email span-comments"
+					><label for="email"
+						><span class="rotulo-input">Seu Email</span>
+					</label>
+					<span class="required">*</span
+					><input
+						class="inputs-comments"
+						id="email%INDEX%"
+						placeholder="Seu email"
+						name="email"
+						type="text"
+						value=""
+						size="10"
+				/></span>
+			</div>
+			<p class="comment-form-cookies-consent">
+				<input
+					id="wp-comment-cookies-consent%INDEX%"
+					name="wp-comment-cookies-consent"
+					type="checkbox"
+					value="yes"
+				/>
+				<label for="wp-comment-cookies-consent"
+					>Salvar meus dados neste navegador para a próxima vez que eu
+					comentar.</label
+				>
+			</p>
+			<p class="form-submit">
+				<input
+					name="submit"
+					type="submit"
+					id="submit%INDEX%"
+					class="button button-identity"
+					value="Publicar comentário"
+				/>
+				<input
+					type="hidden"
+					name="comment_post_ID"
+					value="%POST_ID%"
+					id="comment_post_ID%INDEX%"
+				/>
+				<input
+					type="hidden"
+					name="comment_parent"
+					id="comment_parent%INDEX%"
+					value="0"
+				/>
+			</p>
+		</form>
+	</div>
+	<ul id="comments%INDEX%"class="comment-list ">
+		%COMMENTS%
+	</ul>
+</div>

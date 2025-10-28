@@ -1,0 +1,13 @@
+/* import _related.scss */
+/*
+Define the breakpoints
+*/
+.relateds-title {
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .relateds-title {
+    text-decoration: underline;
+  }
+}

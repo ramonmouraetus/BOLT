@@ -1,0 +1,57 @@
+[
+	{
+		"alias": "facebook",
+    "name": "show_facebook_share",
+    "share_link": "https://www.facebook.com/sharer/sharer.php?u=",
+    "archive_name": "facebook_share.svg",
+    "control": {
+      "section": "social_media_section",
+      "label": "Exibir Facebook Share",
+      "type": "checkbox"
+    }
+	},
+  {
+		"alias": "twitter",
+    "name": "show_twitter_share",
+    "share_link": "https://twitter.com/intent/tweet?text=",
+    "archive_name": "twitter_share.svg",
+    "control": {
+      "section": "social_media_section",
+      "label": "Exibir Twitter Share",
+      "type": "checkbox"
+    }
+	},
+  {
+		"alias": "linkedin",
+    "name": "show_linkedin_share",
+    "share_link": "https://www.addtoany.com/add_to/linkedin?linkurl=",
+    "archive_name": "linkedin_share.svg",
+    "control": {
+      "section": "social_media_section",
+      "label": "Exibir LinkedIn Share",
+      "type": "checkbox"
+    }
+	},
+	{
+		"alias": "pinterest",
+    "name": "show_pinterest_share",
+    "share_link": "https://pinterest.com/pin/create/button/?url=",
+    "archive_name": "pinterest_share.svg",
+    "control": {
+      "section": "social_media_section",
+      "label": "Exibir Pinterest Share",
+      "type": "checkbox"
+    }
+	},
+	{
+		"alias": "tumblr",
+    "name": "show_tumblr_share",
+    "share_link": "http://www.tumblr.com/share/link?url=",
+    "archive_name": "tumblr_share.svg",
+    "control": {
+      "section": "social_media_section",
+      "label": "Exibir Tumblr Share",
+      "type": "checkbox"
+    }
+	}
+]

@@ -1,0 +1,61 @@
+.author-name {
+  font-weight: bold;
+}
+
+.read-time {
+  font-weight: bold;
+}
+
+.info {
+  margin-bottom: 1rem;
+}
+
+.post-row {
+  border-top: 1px solid #ccc;
+  height: 2em;
+}
+
+.form-search {
+  display: none;
+  margin-left: 1em;
+}
+
+.search-row {
+  display: flex;
+}
+
+.not-found {
+  padding-top: 1rem;
+}
+
+.share-post {
+  display: flex;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.share-title {
+  position: relative;
+  font-weight: 700;
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.inputs-row {
+  flex-direction: row;
+  display: none;
+}
+
+.form-search input {
+  max-width: 200px;
+}
+
+.no-show {
+  display: none;
+}
+

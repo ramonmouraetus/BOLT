@@ -1,0 +1,86 @@
+[
+	{
+		"name": "meta_section",
+    "attrs": {
+      "description": "Definir se, onde e qual meta de autor utilizar",
+      "title": "Author meta options"
+    }
+	},
+  {
+		"name": "ads_section",
+    "attrs": {
+      "description": "⚠️Somente páginas e posts. Permite habilitar o top ad em locais específicos eliminando o CLS",
+      "title": "Top Ad Management"
+    }
+	},
+  {
+		"name": "prerender_section",
+    "attrs": {
+      "description": "Utilizado para otimizar a velocidade de carregamento das páginas vinculadas pelos CTAs.",
+      "title": "Prerender Management"
+    }
+	},
+  {
+		"name": "home_layout_section2",
+    "attrs": {
+      "panel": "home_layout_section",
+      "title": "Modelo de Home Page"
+    }
+	},
+  {
+    "name": "social_media_section",
+    "attrs": {
+      "title": "Social Share",
+      "description": "Exibir ícone de compartilhar (Somente desktop)",
+      "priority": 1000
+    }
+  },
+  {
+    "name": "related_posts_section",
+    "attrs": {
+      "title": "Posts relacionados",
+      "description": "Exibir posts relacionados",
+      "priority": 1010
+    }
+  },
+  {
+    "name": "infinite_scroll_section",
+    "attrs": {
+      "title": "Infinite Scroll",
+      "description": "Ativar scroll infinito em posts/páginas",
+      "priority": 1020
+    }
+  },
+  {
+    "name": "post_list_section",
+    "attrs": {
+      "title": "Lazy Sections",
+      "description": "Ativar Paginação/Lazy Sections em posts",
+      "priority": 1030
+    }
+  },
+  {
+    "name": "not_found_section",
+    "attrs": {
+      "title": "404",
+      "description": "Personalizar página de erro 404",
+      "priority": 1040
+    }
+  },
+  {
+    "name": "performance_section",
+    "attrs": {
+      "title": "Performance 🚀",
+      "description": "Personalizar página de erro 404",
+      "priority": 1040
+    }
+  },
+  {
+    "name": "versal_section",
+    "attrs": {
+      "title": "Versal (Chapéu)",
+      "description": "Personalizar o Versal",
+      "priority": 1050
+    }
+  }
+]

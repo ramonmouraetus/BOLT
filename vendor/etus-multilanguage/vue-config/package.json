@@ -1,0 +1,24 @@
+{
+  "name": "multilanguage-blog-config",
+  "private": true,
+  "workspaces": ["vue-config/*"],
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:watch": "concurrently \"npm run dev:watch --workspace vue-config\"",
+    "build": "concurrently \"npm run build --workspace vue-config\"",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "vuestic-ui": "^1.10.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "concurrently": "^9.1.2",
+    "sass-embedded": "^1.85.1",
+    "vite": "^6.2.0",
+    "vue-loader": "^17.4.2"
+  }
+}

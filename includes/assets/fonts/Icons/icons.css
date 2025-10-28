@@ -1,0 +1,55 @@
+@font-face {
+	font-family: "fontello";
+	src: url("./fontello.eot?42625940");
+	src: url("./fontello.eot?42625940#iefix") format("embedded-opentype"),
+		url("./fontello.woff?42625940") format("woff"),
+		url("./fontello.ttf?42625940") format("truetype"),
+		url("./fontello.svg?42625940#fontello") format("svg");
+	font-weight: normal;
+	font-style: normal;
+  font-display: swap;
+}
+
+.icon {
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 0.8em;
+	margin-right: 0.2em;
+	text-align: center;
+	/* opacity: .8; */
+
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: 0.2em;
+
+	/* You can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+
+.font-2x {
+  font-size: 20px;
+}
+
+.font-3x {
+  font-size: 25px;
+}
+
+.font-4x {
+  font-size: 30px;
+}
+

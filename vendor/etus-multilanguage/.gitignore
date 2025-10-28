@@ -1,0 +1,35 @@
+# Ignorar arquivos e diretórios de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar diretórios de build
+/build/
+/dist/
+
+# Ignorar arquivos gerados por compiladores ou IDEs
+*.class
+*.pyc
+*.swp
+.idea/
+.vscode/
+
+# Ignorar dependências (ex: Node.js)
+node_modules/
+
+# Ignorar arquivos de configuração específicos do usuário
+*.env
+
+# Ignorar arquivos minificados de CSS
+*.min.css
+
+# Ignorar arquivos minificados de JavaScript
+*.min.js
+
+# Ignorar arquivos minificados de HTML
+*.min.html
+
+# Ignorar outros tipos de arquivos minificados (se necessário)
+*.min.*

@@ -1,0 +1,61 @@
+[
+    {
+        "key": "group_6350956abf502",
+        "title": "Cloudflare Cache Manager",
+        "fields": [
+            {
+                "key": "field_6350958a32318",
+                "label": "Cloudflare API Token",
+                "name": "cloudflare_api_token",
+                "type": "password",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "100",
+                    "class": "",
+                    "id": ""
+                },
+                "placeholder": "API Token",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_635095cb32319",
+                "label": "Cloudflare Zone ID",
+                "name": "cloudflare_zone_id",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "cf-cm"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

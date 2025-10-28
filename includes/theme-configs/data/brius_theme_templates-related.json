@@ -1,0 +1,5 @@
+{
+  "wrapper": "<div class=\"brius-relateds\"><div class=\"relateds-title detail-page__what-now-title\">%RELATEDS-TITLE%</div><div class=\"news-contents-section__blocks news-contents-section__blocks--columns4 news-contents-section__blocks--wide\">%RELATED%</div></div>",
+  "related": "<div id=\"%POST-ID%\" class=\"post-card-wrapper news-contents-section__block related\"><article class=\"post-card\"><a href=\"%POST-PERMALINK%\" ><div class=\"image-effect-scale cursor-pointer\" >%THUMBNAIL%</div ></a><div class=\"post-card__body\"> <a href=\"%POST-PERMALINK%\" ><h3 class=\"brius_lightweight_identity_font post-card__versal\">%POST-VERSAL%</h3><h3 class=\"post-card__title\">%POST-TITLE%</h3></a><h4 class=\"post-card__excerpt\"></h4></div></article></div>"
+}
+
